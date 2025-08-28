@@ -3,3 +3,4 @@ venv/
 .zed
 __pycache__
 mydb.sqlite3
+.env
