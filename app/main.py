@@ -2,8 +2,7 @@ from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-import os
-
+from app.core.config import STATIC_DIR, TEMPLATES_DIR
 app = FastAPI()
 
 @app.get("/")

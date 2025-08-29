@@ -1,6 +1,34 @@
+# Virtual environments
 venv/
-.ropeproject
-.zed
-__pycache__
-mydb.sqlite3
 .env
+*.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+
+# SQLite / local DB files
+*.sqlite3
+*.db
+
+# IDE / Editor configs
+.vscode/
+.idea/
+.ropeproject/
+.zed/
+
+# Alembic cache
+alembic/versions/__pycache__/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
