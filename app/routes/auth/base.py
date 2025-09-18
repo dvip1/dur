@@ -81,7 +81,7 @@ def read_users_me(current_user: user_schema.UserPublic = Depends(deps.get_curren
     """
     return current_user
 
-# --- Refresh Token Endpoint ---
+    # --- Refresh Token Endpoint ---
 @router.post(Routes.Auth.refresh, response_model=token_schema.Token)
 def refresh_access_token(
     current_user: user_schema.UserPublic = Depends(deps.get_current_user),

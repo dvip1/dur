@@ -8,3 +8,7 @@ class Routes:
         me = "/me"
         refresh = "/token/refresh"
         change_password = "/change-password"
+
+    class Packages: 
+        root = "/api/packages"
+        default ="/"
