@@ -3,8 +3,10 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from app.core.config import STATIC_DIR, TEMPLATES_DIR
 from fastapi.middleware.cors import CORSMiddleware
+from app.routes.auth import base
 app = FastAPI()
-# --- CORS Configuration ---
+
+app.include_router(base.router)
 origins = [
     "http://localhost:3000",  # Your Next.js development server URL
     # "https://your-nextjs-app.com", 

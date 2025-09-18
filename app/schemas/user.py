@@ -25,3 +25,7 @@ class UserPublic(UserBase):
     # ConfigDict tells Pydantic to read data even if it's not a dict,
     # but an ORM model (like our SQLAlchemy User model).
     model_config = ConfigDict(from_attributes=True)
+
+class LoginRequest(BaseModel):
+    username: str
+    password: str
