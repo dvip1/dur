@@ -11,3 +11,10 @@ class PackageBase(BaseModel):
     repo_url: HttpUrl # Using HttpUrl for automatic URL validation
     license: Optional[str] = None
     homepage: Optional[HttpUrl] = None
+
+class PackageOut(PackageBase):
+    id: int
+    created_by: int
+
+    class Config:
+        from_attributes = True 
