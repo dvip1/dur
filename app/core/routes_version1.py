@@ -1,7 +1,7 @@
 class Routes: 
     root = "/"
     class Auth:
-        root = "/api/auth"
+        root = "/auth"
         login = "/login"
         logout = "/logout"
         register = "/register"
@@ -10,5 +10,5 @@ class Routes:
         change_password = "/change-password"
 
     class Packages: 
-        root = "/api/packages"
+        root = "/api/v1/packages"
         default ="/"

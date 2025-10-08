@@ -9,7 +9,7 @@ from app.crud import user as crud_user
 from app.schemas import user as user_schema
 from app.schemas import token as token_schema
 from app.auth import security as auth_security
-from app.core.routes import Routes # Your route configuration class
+from app.core.routes_version1 import Routes # Your route configuration class
 
 router = APIRouter(
     prefix=Routes.Auth.root,

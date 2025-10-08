@@ -3,7 +3,7 @@
 from typing import List
 from app.routes.packages.packages import router
 from app import dependencies as deps
-from app.core.routes import Routes # Your route configuration class
+from app.core.routes_version1 import Routes # Your route configuration class
 from fastapi import APIRouter, HTTPException, Request, Depends, status
 from app.schemas import user as user_schema
 from app.schemas.packages import PackageOut # Import the output schema
