@@ -12,3 +12,4 @@ class Routes:
     class Packages: 
         root = "/api/v1/packages"
         default ="/"
+        get_by_name = "/{package_name}"

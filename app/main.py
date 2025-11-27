@@ -13,6 +13,7 @@ origins = [
     "http://localhost:3000",  # Your Next.js development server URL
     # "https://your-nextjs-app.com", 
 ]
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,          # List of origins allowed to make requests

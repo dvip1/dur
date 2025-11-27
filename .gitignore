@@ -1,5 +1,6 @@
 # Virtual environments
 venv/
+.venv/
 .env
 *.env
 
@@ -31,4 +32,3 @@ alembic/versions/__pycache__/
 # OS files
 .DS_Store
 Thumbs.db
-

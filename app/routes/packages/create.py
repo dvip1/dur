@@ -16,7 +16,6 @@ from app.services.providers import InvalidRepoException
     Routes.Packages.default, 
     response_model=PackageOut, 
     status_code=status.HTTP_201_CREATED,
-    # Add explicit responses for better documentation
     responses={
         status.HTTP_409_CONFLICT: {
             "description": "Conflict Error",
@@ -36,11 +35,6 @@ from app.services.providers import InvalidRepoException
         }
     }
 )
-
-# In create.py
-
-# ... your other imports
-
 async def create_package_route(
     data: PackageBase,
     current_user: user_schema.UserPublic = Depends(deps.get_current_user),
